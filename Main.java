@@ -38,15 +38,16 @@ class BankAccount {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
+            System.out.print("Enter your account");
             System.out.print("Enter account number: ");
-            int accountNumber = scanner.nextInt();
+            int accountNum = scanner.nextInt();
             scanner.nextLine(); // Consume newline
             System.out.print("Enter account holder name: ");
-            String accountHolderName = scanner.nextLine();
+            String accountName = scanner.nextLine();
             System.out.print("Enter initial balance: ");
             int initialBalance = scanner.nextInt();
 
-            BankAccount account = new BankAccount(accountNumber, accountHolderName, initialBalance);
+            BankAccount account = new BankAccount(accountNum, accountName, initialBalance);
 
             while (true) {
                 System.out.println("Menu:");
